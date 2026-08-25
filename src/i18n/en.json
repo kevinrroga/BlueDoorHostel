@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "about": "About",
+    "gallery": "Gallery",
+    "rooms": "Rooms",
+    "events": "Events",
+    "location": "Location",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "headline": "Where Tirana opens its doors to you",
+    "subtext": "A renovated Albanian villa a short walk from the Old Bazaar, with home-cooked dinners, a garden to sit in, and a cobalt blue door that has welcomed travellers, neighbours and stories for decades.",
+    "cta_primary": "Check availability",
+    "cta_secondary": "Explore the hostel",
+    "badge_rating": "Rated 9.2",
+    "badge_breakfast": "Free breakfast",
+    "badge_wifi": "Free Wi-Fi",
+    "badge_location": "Near Skanderbeg Square"
+  },
+  "story": {
+    "label": "Our story",
+    "heading": "An old partisan villa, still full of life",
+    "paragraph1": "The house is a historic Albanian villa that sheltered WWII partisans. Its bones are the same: thick walls, high ceilings, a fireplace in the common room, but the inside has been carefully renovated into a warm, social place to stay.",
+    "paragraph2": "Local paintings hang on almost every wall, blending old and modern Albanian art, and the cobalt blue front door the hostel is named after has always meant the same thing here: peace and prosperity to whoever walks through it.",
+    "paragraph3": "The neighbourhood is real Tirana: bakeries, corner cafes and neighbours who say hello, with Skanderbeg Square and the Old Bazaar an easy walk away.",
+    "door_motto": "A symbol of peace and prosperity, painted cobalt blue.",
+    "stat_rating_label": "Guest rating",
+    "stat_reviews_label": "Reviews",
+    "stat_villa_label": "A villa since"
+  },
+  "amenities": {
+    "label": "Amenities",
+    "heading": "Everything you need, nothing you don't",
+    "items": [
+      { "title": "Free breakfast daily", "text": "Vegetarian friendly, plus Nana's traditional dinners most nights." },
+      { "title": "Towels included", "text": "No extra fees, no deposits. Just ask at reception." },
+      { "title": "Personal lockers", "text": "Spacious lockers with a key provided for every guest." },
+      { "title": "A/C + privacy curtains", "text": "Air conditioning throughout and a curtain on every bed." },
+      { "title": "Garden, terrace & bar", "text": "Where most evenings and new friendships start." },
+      { "title": "Shared kitchen", "text": "Cook your own, or join whatever's on the stove." },
+      { "title": "Free Wi-Fi", "text": "Fast enough to work, plan or upload the whole trip." },
+      { "title": "Games room", "text": "Ping pong and darts: rivalries strongly encouraged." },
+      { "title": "Bicycle parking", "text": "Safe spot for your bike; Tirana is flat and rideable." },
+      { "title": "Bag storage", "text": "Early arrival or late bus? Leave your bag with us." },
+      { "title": "Working spaces", "text": "Quiet corners and fast Wi-Fi for remote workers and planners." },
+      { "title": "Laundry service", "text": "Keep your bag light and we will sort the rest." }
+    ]
+  },
+  "events": {
+    "label": "Events",
+    "heading": "Something's always happening",
+    "description": "We are not a party hostel; we are a social one. If you arrive in Tirana alone, you won't stay that way. There is something on almost every night, and it always starts the same way: someone in the common room asking if you want to join.",
+    "items": [
+      { "title": "Karaoke nights", "text": "Nobody is good. Everybody sings." },
+      { "title": "Trivia evenings", "text": "Mixed teams: you will know half the room by round three." },
+      { "title": "Albanian Nights", "text": "Raki, folk music and stories from our staff." },
+      { "title": "Cooking classes", "text": "Learn byrek and other family favourites with Nana." },
+      { "title": "Movie nights", "text": "Projector on the terrace when the weather plays along." },
+      { "title": "BBQs", "text": "Garden grill, long tables, everyone invited." },
+      { "title": "Day trips & walking tours", "text": "Bunk'Art, Dajti Mountain and the Old Bazaar." },
+      { "title": "Stand-up comedy", "text": "Local and traveller comedians. The crowd is always mixed." }
+    ]
+  },
+  "reviews": {
+    "label": "Reviews",
+    "heading": "Guests keep saying the same things",
+    "categories": ["Staff", "Value", "Wi-Fi", "Cleanliness", "Comfort", "Location"],
+    "quotes": [
+      "The staff was so hospitable, and made me feel at home. The food was DELICIOUS. Honestly just eat here and you'll get the most authentic Albanian food.",
+      "Great vibe, very social hostel. Not far from the main sights. A really lovely breakfast, one of the best I had in Albania. Events every night too.",
+      "Such a warm cozy hostel. The large common area with the fireplace, the free breakfast and cheap dinners were amazing. Felt really welcome from day one.",
+      "Breakfast made by the grandma is amazing. Staff go above and beyond. I felt so relaxed in the garden, one of those places you do not want to leave.",
+      "Surrounded by authentic Albanian villas, away from the tourist bubble but still walkable to everything. The community vibe here is genuinely special.",
+      "The roof terrace at sunset, cheap dinners, friendly staff and new friends every night. Tirana is underrated and so is this place."
+    ]
+  },
+  "rooms": {
+    "label": "Rooms",
+    "heading": "Somewhere comfortable to land",
+    "book_button": "Book this room",
+    "items": [
+      {
+        "name": "Mixed dorms",
+        "from": "From €18 / night",
+        "text": "The social heart of the hostel, where most friendships here start.",
+        "features": ["Air conditioning", "Privacy curtains on every bed", "Spacious personal lockers"]
+      },
+      {
+        "name": "Female-only dorms",
+        "from": "From €18 / night",
+        "text": "Same comfort and calm, reserved for women travelling solo or together.",
+        "features": ["Air conditioning", "Privacy curtains on every bed", "Spacious personal lockers"]
+      },
+      {
+        "name": "Private rooms",
+        "from": "Ask for availability",
+        "text": "Your own door to close, with the common room still a few steps away.",
+        "features": ["Air conditioning", "Private space for one or two", "Towels included"]
+      }
+    ]
+  },
+  "location": {
+    "label": "Location",
+    "heading": "In the middle of real Tirana",
+    "directions_button": "Get directions",
+    "nearby": [
+      { "label": "Skanderbeg Square", "text": "An easy walk from the front door." },
+      { "label": "Old Bazaar", "text": "Cafes, produce stalls and Pazari i Ri nearby." },
+      { "label": "Et'hem Bey Mosque", "text": "One of the most beautiful Ottoman-era buildings in Albania." },
+      { "label": "Clock Tower & National Gallery", "text": "Both within easy walking distance of the hostel." },
+      { "label": "Bus stop", "text": "200 m away for city and intercity lines." },
+      { "label": "Tirana Airport", "text": "15 km, around 30 minutes by car." }
+    ]
+  },
+  "footer": {
+    "tagline": "A symbol of peace and prosperity in Tirana, Albania.",
+    "book_with_us": "Book with us",
+    "copyright": "All rights reserved."
+  }
+}

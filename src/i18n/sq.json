@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "about": "Rreth nesh",
+    "gallery": "Galeria",
+    "rooms": "Dhoma",
+    "events": "Evente",
+    "location": "Vendndodhja",
+    "bookNow": "Rezervo tani"
+  },
+  "hero": {
+    "headline": "Ku Tirana ju hap dyert",
+    "subtext": "Një vilë shqiptare e rinovuar, pak minuta larg Pazarit të Vjetër, me darka shtëpiake, një kopsht ku mund të ulesh dhe një derë blu kobalt që ka pritur udhëtarë, fqinjë dhe histori për dekada.",
+    "cta_primary": "Kontrollo disponibilitetin",
+    "cta_secondary": "Eksploroni hostetin",
+    "badge_rating": "Vlerësuar 9.2",
+    "badge_breakfast": "Mëngjes falas",
+    "badge_wifi": "Wi-Fi falas",
+    "badge_location": "Afër Sheshit Skënderbej"
+  },
+  "story": {
+    "label": "Historia jonë",
+    "heading": "Një vilë e vjetër partizane, ende plot jetë",
+    "paragraph1": "Shtëpia është një vilë historike shqiptare që strehoi partizanët e Luftës së Dytë Botërore. Struktura e saj është e njëjtë: mure të trasha, tavan të lartë, oxhak në dhomën e përbashkët, por brenda është rinovuar me kujdes në një vend të ngrohtë dhe shoqëror.",
+    "paragraph2": "Piktura lokale varin pothuajse në çdo mur, duke ndërthurur artin shqiptar të vjetër dhe modern, dhe dera e hyrjes blu kobalt, pas së cilës hosteti mori emrin, ka pasur gjithmonë të njëjtin kuptim: paqe dhe prosperitet për të gjithë ata që kalojnë nëpër të.",
+    "paragraph3": "Lagja është Tirana e vërtetë: furra buke, kafene cepi dhe fqinjë që përshëndesin, me Sheshin Skënderbej dhe Pazarin e Vjetër vetëm pak hapa larg.",
+    "door_motto": "Një simbol i paqes dhe prosperitetit, i lyer me blu kobalt.",
+    "stat_rating_label": "Vlerësim i mysafirëve",
+    "stat_reviews_label": "Komente",
+    "stat_villa_label": "Vilë që nga"
+  },
+  "amenities": {
+    "label": "Shërbime",
+    "heading": "Gjithçka që ju nevojitet, asgjë që s'ju duhet",
+    "items": [
+      { "title": "Mëngjes falas çdo ditë", "text": "I përshtatshëm për vegjetarianë, plus darkat tradicionale të Nanës shumicën e netëve." },
+      { "title": "Peshqirë të përfshirë", "text": "Pa tarifa shtesë, pa depozita. Thjesht kërkoni në recepsion." },
+      { "title": "Kasaforta personale", "text": "Kasaforta të mëdha me çelës për çdo mysafir." },
+      { "title": "A/C + perde privatësie", "text": "Kondicionim ajri gjatë gjithë kohës dhe perde në çdo shtrat." },
+      { "title": "Kopsht, tarracë dhe bar", "text": "Ku fillojnë shumica e mbrëmjeve dhe miqësive të reja." },
+      { "title": "Kuzhinë e përbashkët", "text": "Gatuani vetë, ose bashkohuni me çfarë ka në zjarr." },
+      { "title": "Wi-Fi falas", "text": "Mjaft i shpejtë për të punuar, planifikuar ose ngarkuar gjithë udhëtimin." },
+      { "title": "Dhomë lojërash", "text": "Ping pong dhe shigjetat: rivalitete inkurajohen fuqimisht." },
+      { "title": "Parkim për biçikleta", "text": "Vend i sigurt për biçikletën tuaj; Tirana është e sheshtë dhe e kalueshme." },
+      { "title": "Ruajtje bagazhesh", "text": "Mbërritja herët ose autobusi vonë? Lini bagazhin me ne." },
+      { "title": "Hapësira pune", "text": "Qoshe të qeta dhe Wi-Fi i shpejtë për punëtorët në distancë dhe planifikuesit." },
+      { "title": "Shërbim lavanderisë", "text": "Mbajeni çantën të lehtë dhe ne do të rregullojmë pjesën tjetër." }
+    ]
+  },
+  "events": {
+    "label": "Evente",
+    "heading": "Gjithmonë ka diçka duke ndodhur",
+    "description": "Ne nuk jemi hostel feste; jemi social. Nëse mbërrini në Tiranë vetëm, nuk do të qëndroni kështu. Ka diçka pothuajse çdo natë, dhe gjithmonë fillon njëlloj: dikush në dhomën e përbashkët duke pyetur nëse doni të bashkoheni.",
+    "items": [
+      { "title": "Netë karaoke", "text": "Askush nuk këndon mirë. Të gjithë këndojnë." },
+      { "title": "Mbrëmje trivia", "text": "Ekipe të përziera: do të njihni gjysmën e dhomës deri në xhiron e tretë." },
+      { "title": "Netë shqiptare", "text": "Raki, muzikë folklorike dhe histori nga stafi ynë." },
+      { "title": "Klasa gatimi", "text": "Mësoni byrekun dhe të preferuarat e tjera të familjes me Nanën." },
+      { "title": "Netë filmi", "text": "Projektor në tarracë kur moti lejon." },
+      { "title": "BBQ", "text": "Skarë në kopsht, tavolina të gjata, të gjithë të ftuar." },
+      { "title": "Ekskursione dhe shëtitje", "text": "Bunk'Art, Mali i Dajtit dhe Pazari i Vjetër." },
+      { "title": "Stand-up komedi", "text": "Komikë vendas dhe udhëtarë. Publiku është gjithmonë i përzier." }
+    ]
+  },
+  "reviews": {
+    "label": "Komente",
+    "heading": "Mysafirët vazhdojnë të thonë të njëjtat gjëra",
+    "categories": ["Stafi", "Vlera", "Wi-Fi", "Pastërtia", "Rehati", "Vendndodhja"],
+    "quotes": [
+      "Stafi ishte shumë mikpritës dhe më bëri të ndihej si në shtëpi. Ushqimi ishte SHUMË I SHIJSHËM. Thjesht hani këtu dhe do të merrni ushqimin më autentik shqiptar.",
+      "Atmosferë e shkëlqyer, hostel shumë social. Jo larg nga pamjet kryesore. Një mëngjes vërtet i mrekullueshëm, një nga më të mirët që pata në Shqipëri. Evente çdo natë gjithashtu.",
+      "Hostel kaq i ngrohtë dhe komod. Dhoma e madhe e përbashkët me oxhakun, mëngjesi falas dhe darkat e lira ishin të mrekullueshme. U ndava vërtet mirëseardhur nga dita e parë.",
+      "Mëngjesi i bërë nga gjyshja është i mahnitshëm. Stafi bën më shumë nga sa pritet. U ndjeva shumë i qetë në kopsht, një nga ato vende nga të cilat nuk dëshiron të largohesh.",
+      "I rrethuar nga villa autentike shqiptare, larg flluskës turistike por ende afër gjithçkaje me këmbë. Atmosfera e komunitetit këtu është vërtet e veçantë.",
+      "Terraca e çatisë në perëndim dielli, darkat e lira, stafi miqësor dhe miq të rinj çdo natë. Tirana është e nënvlerësuar dhe ashtu është edhe ky vend."
+    ]
+  },
+  "rooms": {
+    "label": "Dhoma",
+    "heading": "Një vend i rehatshëm për të zbritur",
+    "book_button": "Rezervoni këtë dhomë",
+    "items": [
+      {
+        "name": "Dhoma të përbashkëta të përziera",
+        "from": "Nga €18 / natë",
+        "text": "Zemra sociale e hostelrit, ku fillojnë shumica e miqësive.",
+        "features": ["Kondicionim ajri", "Perde privatësie në çdo shtrat", "Kasaforta personale të mëdha"]
+      },
+      {
+        "name": "Dhoma vetëm për femra",
+        "from": "Nga €18 / natë",
+        "text": "E njëjta rehatje dhe qetësi, e rezervuar për gratë që udhëtojnë vetëm ose së bashku.",
+        "features": ["Kondicionim ajri", "Perde privatësie në çdo shtrat", "Kasaforta personale të mëdha"]
+      },
+      {
+        "name": "Dhoma private",
+        "from": "Pyesni për disponibilitetin",
+        "text": "Dera juaj për t'u mbyllur, me dhomën e përbashkët vetëm disa hapa larg.",
+        "features": ["Kondicionim ajri", "Hapësirë private për një ose dy", "Peshqirë të përfshirë"]
+      }
+    ]
+  },
+  "location": {
+    "label": "Vendndodhja",
+    "heading": "Në mes të Tiranës së vërtetë",
+    "directions_button": "Merrni udhëzimet",
+    "nearby": [
+      { "label": "Sheshi Skënderbej", "text": "Një shëtitje e lehtë nga dera e hyrjes." },
+      { "label": "Pazari i Vjetër", "text": "Kafene, tezga produktesh dhe Pazari i Ri afër." },
+      { "label": "Xhamia e Et'hem Beut", "text": "Një nga ndërtesat më të bukura të epokës osmane në Shqipëri." },
+      { "label": "Kulla e Sahatit dhe Galeria Kombëtare", "text": "Të dyja brenda distancës së ecjes nga hosteli." },
+      { "label": "Stacioni i autobusit", "text": "200 m larg për linjat urbane dhe ndërurbane." },
+      { "label": "Aeroporti i Tiranës", "text": "15 km, rreth 30 minuta me makinë." }
+    ]
+  },
+  "footer": {
+    "tagline": "Një simbol i paqes dhe prosperitetit në Tiranë, Shqipëri.",
+    "book_with_us": "Rezervo me ne",
+    "copyright": "Të gjitha të drejtat e rezervuara."
+  }
+}

@@ -1,7 +1,9 @@
 import { DoorIcon } from "./DoorIcon";
 import { Reveal } from "./Reveal";
+import { useT } from "@/lib/useT";
 
 export function Story() {
+  const t = useT();
   return (
     <section id="about" className="px-5 py-20 sm:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
@@ -13,24 +15,24 @@ export function Story() {
             />
             <DoorIcon className="relative h-36 sm:h-44" />
             <p className="relative mt-8 max-w-xs font-display text-xl leading-snug">
-              A symbol of peace and prosperity, painted cobalt blue.
+              {t.story.door_motto}
             </p>
             <dl className="relative mt-10 grid grid-cols-3 gap-4 border-t border-primary-foreground/20 pt-8">
               <div>
                 <dt className="text-xs uppercase tracking-widest text-primary-foreground/60">
-                  Guest rating
+                  {t.story.stat_rating_label}
                 </dt>
                 <dd className="mt-1 font-display text-3xl font-bold text-gold">9.2</dd>
               </div>
               <div>
                 <dt className="text-xs uppercase tracking-widest text-primary-foreground/60">
-                  Reviews
+                  {t.story.stat_reviews_label}
                 </dt>
                 <dd className="mt-1 font-display text-3xl font-bold text-gold">1.2k+</dd>
               </div>
               <div>
                 <dt className="text-xs uppercase tracking-widest text-primary-foreground/60">
-                  A villa since
+                  {t.story.stat_villa_label}
                 </dt>
                 <dd className="mt-1 font-display text-3xl font-bold text-gold">WWII</dd>
               </div>
@@ -39,25 +41,14 @@ export function Story() {
         </Reveal>
 
         <Reveal delay={120} className="order-1 lg:order-2">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Our story</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{t.story.label}</p>
           <h2 className="mt-4 text-balance font-display text-3xl font-bold leading-tight text-primary sm:text-4xl">
-            An old partisan villa, still full of life
+            {t.story.heading}
           </h2>
           <div className="mt-6 space-y-5 text-base leading-relaxed text-foreground/75">
-            <p>
-              The house is a historic Albanian villa that sheltered WWII partisans. Its bones are
-              the same: thick walls, high ceilings, a fireplace in the common room, but the
-              inside has been carefully renovated into a warm, social place to stay.
-            </p>
-            <p>
-              Local paintings hang on almost every wall, blending old and modern Albanian art, and
-              the cobalt blue front door the hostel is named after has always meant the same
-              thing here: peace and prosperity to whoever walks through it.
-            </p>
-            <p>
-              The neighbourhood is real Tirana: bakeries, corner cafes and neighbours who say
-              hello, with Skanderbeg Square and the Old Bazaar an easy walk away.
-            </p>
+            <p>{t.story.paragraph1}</p>
+            <p>{t.story.paragraph2}</p>
+            <p>{t.story.paragraph3}</p>
           </div>
         </Reveal>
       </div>

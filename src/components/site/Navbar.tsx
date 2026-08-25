@@ -3,18 +3,22 @@ import { Menu, X } from "lucide-react";
 import { DoorIcon } from "./DoorIcon";
 import { BOOKING_URL } from "@/lib/hostel";
 import { cn } from "@/lib/utils";
-
-const links = [
-  { href: "#about", label: "About" },
-  { href: "#gallery", label: "Gallery" },
-  { href: "#rooms", label: "Rooms" },
-  { href: "#events", label: "Events" },
-  { href: "#location", label: "Location" },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useT } from "@/lib/useT";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { lang, setLang } = useLanguage();
+  const t = useT();
+
+  const links = [
+    { href: "#about", label: t.nav.about },
+    { href: "#gallery", label: t.nav.gallery },
+    { href: "#rooms", label: t.nav.rooms },
+    { href: "#events", label: t.nav.events },
+    { href: "#location", label: t.nav.location },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -52,13 +56,27 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center justify-end gap-2">
+          <div className="flex items-center rounded-full border border-border bg-card p-0.5 text-xs font-semibold">
+            <button
+              onClick={() => setLang("en")}
+              className={cn("rounded-full px-3 py-1 transition-colors", lang === "en" ? "bg-primary text-primary-foreground" : "text-foreground/60 hover:text-foreground")}
+            >
+              EN
+            </button>
+            <button
+              onClick={() => setLang("sq")}
+              className={cn("rounded-full px-3 py-1 transition-colors", lang === "sq" ? "bg-primary text-primary-foreground" : "text-foreground/60 hover:text-foreground")}
+            >
+              SQ
+            </button>
+          </div>
           <a
             href={BOOKING_URL}
             target="_blank"
             rel="noreferrer noopener"
             className="hidden rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-soft)] transition-transform hover:-translate-y-0.5 sm:inline-flex"
           >
-            Book Now
+            {t.nav.bookNow}
           </a>
           <button
             type="button"
@@ -85,6 +103,23 @@ export function Navbar() {
                 </a>
               </li>
             ))}
+            <li className="flex items-center justify-between py-3">
+              <span className="text-sm font-medium text-foreground/60">Language</span>
+              <div className="flex items-center rounded-full border border-border bg-card p-0.5 text-xs font-semibold">
+                <button
+                  onClick={() => setLang("en")}
+                  className={cn("rounded-full px-3 py-1 transition-colors", lang === "en" ? "bg-primary text-primary-foreground" : "text-foreground/60 hover:text-foreground")}
+                >
+                  EN
+                </button>
+                <button
+                  onClick={() => setLang("sq")}
+                  className={cn("rounded-full px-3 py-1 transition-colors", lang === "sq" ? "bg-primary text-primary-foreground" : "text-foreground/60 hover:text-foreground")}
+                >
+                  SQ
+                </button>
+              </div>
+            </li>
             <li className="py-3">
               <a
                 href={BOOKING_URL}
@@ -92,7 +127,7 @@ export function Navbar() {
                 rel="noreferrer noopener"
                 className="block rounded-full bg-primary px-5 py-3 text-center text-sm font-semibold text-primary-foreground"
               >
-                Book Now
+                {t.nav.bookNow}
               </a>
             </li>
           </ul>

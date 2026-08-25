@@ -10,6 +10,7 @@ import { Rooms } from "@/components/site/Rooms";
 import { Location } from "@/components/site/Location";
 import { Footer } from "@/components/site/Footer";
 import { ADDRESS, BOOKING_URL, COORDS } from "@/lib/hostel";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const title = "Blue Door Hostel — Social Hostel in Tirana, Albania";
 const description =
@@ -140,19 +141,21 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      <main>
-        <Hero />
-        <Story />
-        <Amenities />
-        <Gallery />
-        <Events />
-        <Reviews />
-        <Rooms />
-        <Location />
-      </main>
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen bg-background text-foreground">
+        <Navbar />
+        <main>
+          <Hero />
+          <Story />
+          <Amenities />
+          <Gallery />
+          <Events />
+          <Reviews />
+          <Rooms />
+          <Location />
+        </main>
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }

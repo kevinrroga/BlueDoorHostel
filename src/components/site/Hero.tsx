@@ -3,15 +3,19 @@ import { DoorIcon } from "./DoorIcon";
 import { Reveal } from "./Reveal";
 import { BOOKING_URL } from "@/lib/hostel";
 import entranceImg from "@/assets/photo-entrance.jpg";
+import { useT } from "@/lib/useT";
 
-const badges = [
-  { icon: Star, label: "Rated 9.0" },
-  { icon: Coffee, label: "Free breakfast" },
-  { icon: Wifi, label: "Free Wi-Fi" },
-  { icon: MapPin, label: "Near Skanderbeg Square" },
-];
+const badgeIcons = [Star, Coffee, Wifi, MapPin];
 
 export function Hero() {
+  const t = useT();
+  const badges = [
+    { icon: Star, label: t.hero.badge_rating },
+    { icon: Coffee, label: t.hero.badge_breakfast },
+    { icon: Wifi, label: t.hero.badge_wifi },
+    { icon: MapPin, label: t.hero.badge_location },
+  ];
+
   return (
     <section
       id="top"
@@ -27,14 +31,12 @@ export function Hero() {
         </Reveal>
         <Reveal delay={100}>
           <h1 className="mt-8 text-balance font-display text-4xl font-bold leading-[1.08] tracking-tight text-primary sm:text-5xl md:text-6xl">
-            Where Tirana opens its doors to you
+            {t.hero.headline}
           </h1>
         </Reveal>
         <Reveal delay={200}>
           <p className="mx-auto mt-6 max-w-xl text-pretty text-base leading-relaxed text-foreground/70 sm:text-lg">
-            A renovated Albanian villa a short walk from the Old Bazaar, with home-cooked dinners,
-            a garden to sit in, and a cobalt blue door that has welcomed travellers, neighbours
-            and stories for decades.
+            {t.hero.subtext}
           </p>
         </Reveal>
         <Reveal delay={300}>
@@ -45,13 +47,13 @@ export function Hero() {
               rel="noreferrer noopener"
               className="w-full rounded-full bg-primary px-7 py-3.5 text-center text-sm font-semibold text-primary-foreground shadow-[var(--shadow-lift)] transition-transform hover:-translate-y-0.5 sm:w-auto"
             >
-              Check availability
+              {t.hero.cta_primary}
             </a>
             <a
               href="#about"
               className="w-full rounded-full border border-primary/30 px-7 py-3.5 text-center text-sm font-semibold text-primary transition-colors hover:bg-primary/5 sm:w-auto"
             >
-              Explore the hostel
+              {t.hero.cta_secondary}
             </a>
           </div>
         </Reveal>
