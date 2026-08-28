@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { DoorIcon } from "./DoorIcon";
 import { BOOKING_URL } from "@/lib/hostel";
 import { cn } from "@/lib/utils";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useTheme } from "@/contexts/ThemeContext";
 import { useT } from "@/lib/useT";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const { lang, setLang } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
   const t = useT();
 
   const links = [
@@ -56,6 +58,13 @@ export function Navbar() {
         </ul>
 
         <div className="flex items-center justify-end gap-2">
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle dark mode"
+            className="grid h-9 w-9 place-items-center rounded-full border border-border bg-card text-foreground/70 transition-colors hover:bg-secondary hover:text-foreground"
+          >
+            {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+          </button>
           <div className="flex items-center rounded-full border border-border bg-card p-0.5 text-xs font-semibold">
             <button
               onClick={() => setLang("en")}
@@ -103,6 +112,16 @@ export function Navbar() {
                 </a>
               </li>
             ))}
+            <li className="flex items-center justify-between border-b border-border/60 py-3">
+              <span className="text-sm font-medium text-foreground/60">Theme</span>
+              <button
+                onClick={toggleTheme}
+                aria-label="Toggle dark mode"
+                className="grid h-9 w-9 place-items-center rounded-full border border-border bg-card text-foreground/70"
+              >
+                {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+              </button>
+            </li>
             <li className="flex items-center justify-between py-3">
               <span className="text-sm font-medium text-foreground/60">Language</span>
               <div className="flex items-center rounded-full border border-border bg-card p-0.5 text-xs font-semibold">

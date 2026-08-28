@@ -1,3 +1,5 @@
+import { useState, useEffect, useCallback } from "react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import {
   Carousel,
@@ -82,7 +84,96 @@ export const GALLERY_PHOTOS = [
   },
 ];
 
+function Lightbox({ index, onClose, onPrev, onNext }: {
+  index: number;
+  onClose: () => void;
+  onPrev: () => void;
+  onNext: () => void;
+}) {
+  const photo = GALLERY_PHOTOS[index];
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+      if (e.key === "ArrowLeft") onPrev();
+      if (e.key === "ArrowRight") onNext();
+    };
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [onClose, onPrev, onNext]);
+
+  return (
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm"
+      onClick={onClose}
+    >
+      {/* Close */}
+      <button
+        className="absolute right-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20"
+        onClick={onClose}
+        aria-label="Close"
+      >
+        <X className="h-5 w-5" />
+      </button>
+
+      {/* Prev */}
+      <button
+        className="absolute left-3 top-1/2 -translate-y-1/2 grid h-11 w-11 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 sm:left-6"
+        onClick={(e) => { e.stopPropagation(); onPrev(); }}
+        aria-label="Previous photo"
+      >
+        <ChevronLeft className="h-6 w-6" />
+      </button>
+
+      {/* Next */}
+      <button
+        className="absolute right-3 top-1/2 -translate-y-1/2 grid h-11 w-11 place-items-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 sm:right-6"
+        onClick={(e) => { e.stopPropagation(); onNext(); }}
+        aria-label="Next photo"
+      >
+        <ChevronRight className="h-6 w-6" />
+      </button>
+
+      {/* Photo + caption */}
+      <div
+        className="flex max-h-[90vh] max-w-5xl flex-col items-center gap-4"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <img
+          src={photo.src}
+          alt={photo.alt}
+          className="max-h-[75vh] w-auto max-w-full rounded-2xl object-contain shadow-2xl"
+        />
+        <div className="text-center">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-white/50">
+            {photo.tag}
+          </p>
+          <p className="mt-1 font-display text-xl font-bold text-white">
+            {photo.title}
+          </p>
+          <p className="mt-1 text-sm text-white/65">{photo.caption}</p>
+          <p className="mt-2 text-xs text-white/30">
+            {index + 1} / {GALLERY_PHOTOS.length}
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function Gallery() {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  const close = useCallback(() => setLightboxIndex(null), []);
+  const prev = useCallback(() =>
+    setLightboxIndex((i) => (i === null ? 0 : (i - 1 + GALLERY_PHOTOS.length) % GALLERY_PHOTOS.length)), []);
+  const next = useCallback(() =>
+    setLightboxIndex((i) => (i === null ? 0 : (i + 1) % GALLERY_PHOTOS.length)), []);
+
   return (
     <section id="gallery" className="scroll-mt-24 bg-background py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-5">
@@ -102,12 +193,15 @@ export function Gallery() {
         <Reveal delay={120} className="mt-10">
           <Carousel opts={{ align: "start", loop: true }} className="w-full">
             <CarouselContent className="-ml-4">
-              {GALLERY_PHOTOS.map((photo) => (
+              {GALLERY_PHOTOS.map((photo, i) => (
                 <CarouselItem
                   key={photo.title}
                   className="flex pl-4 sm:basis-1/2 lg:basis-1/3"
                 >
-                  <figure className="group flex h-full w-full flex-col overflow-hidden rounded-2xl bg-card shadow-[var(--shadow-soft)]">
+                  <figure
+                    className="group flex h-full w-full cursor-zoom-in flex-col overflow-hidden rounded-2xl bg-card shadow-[var(--shadow-soft)]"
+                    onClick={() => setLightboxIndex(i)}
+                  >
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img
                         src={photo.src}
@@ -115,6 +209,11 @@ export function Gallery() {
                         loading="lazy"
                         className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        <span className="rounded-full bg-black/50 px-4 py-2 text-xs font-semibold text-white backdrop-blur-sm">
+                          View full size
+                        </span>
+                      </div>
                     </div>
                     <figcaption className="flex flex-1 flex-col space-y-1.5 p-5">
                       <span className="text-xs font-semibold uppercase tracking-[0.16em] text-accent">
@@ -136,6 +235,15 @@ export function Gallery() {
           </Carousel>
         </Reveal>
       </div>
+
+      {lightboxIndex !== null && (
+        <Lightbox
+          index={lightboxIndex}
+          onClose={close}
+          onPrev={prev}
+          onNext={next}
+        />
+      )}
     </section>
   );
 }

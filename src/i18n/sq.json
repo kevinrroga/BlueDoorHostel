@@ -13,7 +13,7 @@
     "cta_primary": "Kontrollo disponibilitetin",
     "cta_secondary": "Eksploroni hostetin",
     "badge_rating": "Vlerësuar 9.2",
-    "badge_breakfast": "Mëngjes falas",
+    "badge_breakfast": "Nga €17/natë",
     "badge_wifi": "Wi-Fi falas",
     "badge_location": "Afër Sheshit Skënderbej"
   },
@@ -22,7 +22,7 @@
     "heading": "Një vilë e vjetër partizane, ende plot jetë",
     "paragraph1": "Shtëpia është një vilë historike shqiptare që strehoi partizanët e Luftës së Dytë Botërore. Struktura e saj është e njëjtë: mure të trasha, tavan të lartë, oxhak në dhomën e përbashkët, por brenda është rinovuar me kujdes në një vend të ngrohtë dhe shoqëror.",
     "paragraph2": "Piktura lokale varin pothuajse në çdo mur, duke ndërthurur artin shqiptar të vjetër dhe modern, dhe dera e hyrjes blu kobalt, pas së cilës hosteti mori emrin, ka pasur gjithmonë të njëjtin kuptim: paqe dhe prosperitet për të gjithë ata që kalojnë nëpër të.",
-    "paragraph3": "Lagja është Tirana e vërtetë: furra buke, kafene cepi dhe fqinjë që përshëndesin, me Sheshin Skënderbej dhe Pazarin e Vjetër vetëm pak hapa larg.",
+    "paragraph3": "Lagja është Tirana e vërtetë: furra buke, kafene cepi dhe fqinjë që përshëndesin, me Sheshin Skënderbej dhe Pazarin e Ri vetëm pak hapa larg.",
     "door_motto": "Një simbol i paqes dhe prosperitetit, i lyer me blu kobalt.",
     "stat_rating_label": "Vlerësim i mysafirëve",
     "stat_reviews_label": "Komente",
@@ -36,14 +36,16 @@
       { "title": "Peshqirë të përfshirë", "text": "Pa tarifa shtesë, pa depozita. Thjesht kërkoni në recepsion." },
       { "title": "Kasaforta personale", "text": "Kasaforta të mëdha me çelës për çdo mysafir." },
       { "title": "A/C + perde privatësie", "text": "Kondicionim ajri gjatë gjithë kohës dhe perde në çdo shtrat." },
-      { "title": "Kopsht, tarracë dhe bar", "text": "Ku fillojnë shumica e mbrëmjeve dhe miqësive të reja." },
+      { "title": "Kopsht, tarracë dhe bar", "text": "Raki shqiptar, verë lokale dhe birrë të ftohta. Ku fillojnë shumica e mbrëmjeve dhe miqësive të reja." },
       { "title": "Kuzhinë e përbashkët", "text": "Gatuani vetë, ose bashkohuni me çfarë ka në zjarr." },
       { "title": "Wi-Fi falas", "text": "Mjaft i shpejtë për të punuar, planifikuar ose ngarkuar gjithë udhëtimin." },
       { "title": "Dhomë lojërash", "text": "Ping pong dhe shigjetat: rivalitete inkurajohen fuqimisht." },
       { "title": "Parkim për biçikleta", "text": "Vend i sigurt për biçikletën tuaj; Tirana është e sheshtë dhe e kalueshme." },
       { "title": "Ruajtje bagazhesh", "text": "Mbërritja herët ose autobusi vonë? Lini bagazhin me ne." },
       { "title": "Hapësira pune", "text": "Qoshe të qeta dhe Wi-Fi i shpejtë për punëtorët në distancë dhe planifikuesit." },
-      { "title": "Shërbim lavanderisë", "text": "Mbajeni çantën të lehtë dhe ne do të rregullojmë pjesën tjetër." }
+      { "title": "Shërbim lavanderisë", "text": "Mbajeni çantën të lehtë dhe ne do të rregullojmë pjesën tjetër." },
+      { "title": "Transfertë nga aeroporti", "text": "Marrje dhe lënie me kërkesë në Aeroportin Ndërkombëtar të Tiranës. Thjesht na njoftoni paraprakisht." },
+      { "title": "Sallë ndenje dhe tarracë në katin e 3-të", "text": "Një dhomë ndenje e qetë në katin e sipërm me tarracë të hapur. Vendi më i mirë për kafe mëngjesi ose bisedë vonë natën." }
     ]
   },
   "events": {
@@ -57,7 +59,7 @@
       { "title": "Klasa gatimi", "text": "Mësoni byrekun dhe të preferuarat e tjera të familjes me Nanën." },
       { "title": "Netë filmi", "text": "Projektor në tarracë kur moti lejon." },
       { "title": "BBQ", "text": "Skarë në kopsht, tavolina të gjata, të gjithë të ftuar." },
-      { "title": "Ekskursione dhe shëtitje", "text": "Bunk'Art, Mali i Dajtit dhe Pazari i Vjetër." },
+      { "title": "Ekskursione dhe shëtitje", "text": "Bunk'Art, Mali i Dajtit dhe Pazari i Ri." },
       { "title": "Stand-up komedi", "text": "Komikë vendas dhe udhëtarë. Publiku është gjithmonë i përzier." }
     ]
   },
@@ -66,12 +68,36 @@
     "heading": "Mysafirët vazhdojnë të thonë të njëjtat gjëra",
     "categories": ["Stafi", "Vlera", "Wi-Fi", "Pastërtia", "Rehati", "Vendndodhja"],
     "quotes": [
-      "Stafi ishte shumë mikpritës dhe më bëri të ndihej si në shtëpi. Ushqimi ishte SHUMË I SHIJSHËM. Thjesht hani këtu dhe do të merrni ushqimin më autentik shqiptar.",
-      "Atmosferë e shkëlqyer, hostel shumë social. Jo larg nga pamjet kryesore. Një mëngjes vërtet i mrekullueshëm, një nga më të mirët që pata në Shqipëri. Evente çdo natë gjithashtu.",
-      "Hostel kaq i ngrohtë dhe komod. Dhoma e madhe e përbashkët me oxhakun, mëngjesi falas dhe darkat e lira ishin të mrekullueshme. U ndava vërtet mirëseardhur nga dita e parë.",
-      "Mëngjesi i bërë nga gjyshja është i mahnitshëm. Stafi bën më shumë nga sa pritet. U ndjeva shumë i qetë në kopsht, një nga ato vende nga të cilat nuk dëshiron të largohesh.",
-      "I rrethuar nga villa autentike shqiptare, larg flluskës turistike por ende afër gjithçkaje me këmbë. Atmosfera e komunitetit këtu është vërtet e veçantë.",
-      "Terraca e çatisë në perëndim dielli, darkat e lira, stafi miqësor dhe miq të rinj çdo natë. Tirana është e nënvlerësuar dhe ashtu është edhe ky vend."
+      {
+        "text": "Incredible stay at Blue Door Hostel. Felt so at home and relaxed in the space. The staff were absolutely amazing. Nana's cooking was fantastic. The dinners and the breakfasts were absolutely amazing. It was the first hostel that I've genuinely loved the social atmosphere they've created.",
+        "age": "25-30",
+        "nationality": "New Zealand",
+        "gender": "Female"
+      },
+      {
+        "text": "We absolutely loved it here, we extended our stay and would have stayed longer if they hadn't been fully booked. Not only is the location an easy walk from the city center, nightlife, and the sights, but the staff made this place next level. The hostel has everything you need, balancing a super fun social vibe with enough space to relax. Our highlights were the homecooked meal and quiz night.",
+        "age": "18-24",
+        "nationality": "New Zealand",
+        "gender": "Female"
+      },
+      {
+        "text": "This place is fantastic, everything you need from a great hostel. Awesome breakfast, everything is clean, comfortable bed, plenty of space, social atmosphere, showers warm and clean, they even have ear plugs in the rooms. The breakfast is very good and they run tours as well. Highly recommend.",
+        "age": "25-30",
+        "nationality": "Australia",
+        "gender": "Female"
+      },
+      {
+        "text": "Amazing hostel that I would absolutely recommend to everybody travelling to Tirana. Nightly dinners are delicious, fresh, and a great way to meet new people. Beds are super comfy. 10 minute walk from the city center.",
+        "age": "18-24",
+        "nationality": "USA",
+        "gender": "Male"
+      },
+      {
+        "text": "Great stay, super chill. One of the staff carried my really heavy bag up the stairs. Hostel was clean, breakfast was lovely and the place was amazing.",
+        "age": "25-30",
+        "nationality": "Australia",
+        "gender": "Female"
+      }
     ]
   },
   "rooms": {
@@ -80,22 +106,34 @@
     "book_button": "Rezervoni këtë dhomë",
     "items": [
       {
-        "name": "Dhoma të përbashkëta të përziera",
-        "from": "Nga €18 / natë",
-        "text": "Zemra sociale e hostelrit, ku fillojnë shumica e miqësive.",
-        "features": ["Kondicionim ajri", "Perde privatësie në çdo shtrat", "Kasaforta personale të mëdha"]
+        "name": "Dhoma 1",
+        "from": "€18 / natë",
+        "text": "Dhomë e përbashkët e përzier. Dhoma ku shumica e njerëzve qëndrojnë më gjatë se sa kishin planifikuar.",
+        "features": ["6 krevate bunks", "Kondicionim ajri", "Mëngjes i përfshirë"]
       },
       {
-        "name": "Dhoma vetëm për femra",
-        "from": "Nga €18 / natë",
-        "text": "E njëjta rehatje dhe qetësi, e rezervuar për gratë që udhëtojnë vetëm ose së bashku.",
-        "features": ["Kondicionim ajri", "Perde privatësie në çdo shtrat", "Kasaforta personale të mëdha"]
+        "name": "Dhoma 2",
+        "from": "€17 / natë",
+        "text": "Dhoma jonë më e madhe me avantazhin e banjës private brenda dhomës.",
+        "features": ["8 krevate bunks", "Banjë private", "Kondicionim ajri", "Mëngjes i përfshirë"]
       },
       {
-        "name": "Dhoma private",
-        "from": "Pyesni për disponibilitetin",
-        "text": "Dera juaj për t'u mbyllur, me dhomën e përbashkët vetëm disa hapa larg.",
-        "features": ["Kondicionim ajri", "Hapësirë private për një ose dy", "Peshqirë të përfshirë"]
+        "name": "Dhoma 3",
+        "from": "€18 / natë",
+        "text": "Dhomë e rehatshme e përzier me gjithçka që ju nevojitet dhe asgjë që s'ju duhet.",
+        "features": ["6 krevate bunks", "Kondicionim ajri", "Mëngjes i përfshirë"]
+      },
+      {
+        "name": "Dhoma 4 (Vetëm Femra)",
+        "from": "€20 / natë",
+        "text": "Dhomë e dedikuar për gratë që udhëtojnë vetëm ose së bashku. E njëjta rehatje, atmosferë më e qetë.",
+        "features": ["6 krevate bunks", "Vetëm femra", "Kondicionim ajri", "Mëngjes i përfshirë"]
+      },
+      {
+        "name": "Dhomë private",
+        "from": "€28 / natë",
+        "text": "Dera juaj për t'u mbyllur, me dhomën e përbashkët dhe kopshtin vetëm disa hapa larg.",
+        "features": ["Hapësirë private", "Kondicionim ajri", "Peshqirë të përfshirë", "Mëngjes i përfshirë"]
       }
     ]
   },
@@ -105,16 +143,121 @@
     "directions_button": "Merrni udhëzimet",
     "nearby": [
       { "label": "Sheshi Skënderbej", "text": "Një shëtitje e lehtë nga dera e hyrjes." },
-      { "label": "Pazari i Vjetër", "text": "Kafene, tezga produktesh dhe Pazari i Ri afër." },
+      { "label": "Pazari i Ri", "text": "Kafene, tezga produktesh të freskëta dhe ushqim rruge pak hapa larg." },
       { "label": "Xhamia e Et'hem Beut", "text": "Një nga ndërtesat më të bukura të epokës osmane në Shqipëri." },
       { "label": "Kulla e Sahatit dhe Galeria Kombëtare", "text": "Të dyja brenda distancës së ecjes nga hosteli." },
       { "label": "Stacioni i autobusit", "text": "200 m larg për linjat urbane dhe ndërurbane." },
       { "label": "Aeroporti i Tiranës", "text": "15 km, rreth 30 minuta me makinë." }
     ]
   },
+  "faq": {
+    "label": "Pyetje të shpeshta",
+    "heading": "Pyetjet që bëjnë gjithmonë mysafirët",
+    "items": [
+      {
+        "q": "Cilat janë oraret e check-in dhe check-out?",
+        "a": "Check-in është nga ora 11:30 dhe recepsioni është i hapur deri në mesnatë. Check-out është para orës 11:00. Nëse mbërrini herët ose largoheni vonë, me kënaqësi ruajmë bagazhet tuaja falas. Thjesht pyesni në recepsion."
+      },
+      {
+        "q": "Cila është politika e anulimit?",
+        "a": "Mund të anuloni falas deri në 24 orë para datës së mbërritjes. Anulimet e bëra më pak se 24 orë para check-in i nënshtrohen një tarife për një natë. Politikat mund të ndryshojnë pak sipas llojit të dhomës, ndaj kontrolloni konfirmimin e rezervimit tuaj për kushtet e sakta."
+      },
+      {
+        "q": "A përfshihet mëngjesi?",
+        "a": "Po, mëngjesi falas përfshihet çdo mëngjes. Është i përshtatshëm për vegjetarianë dhe bëhet i freskët çdo ditë. Shumica e mbrëmjeve, Nana gjithashtu përgatit një darkë tradicionale shqiptare të disponueshme për të gjithë mysafirët me çmim të ulët."
+      },
+      {
+        "q": "A ofrohen peshqirë?",
+        "a": "Po, peshqirët përfshihen në çmim. Pa tarifa shtesë, pa depozita. Thjesht pyesni në recepsion kur mbërrini."
+      },
+      {
+        "q": "Si mund të shkoj nga Aeroporti i Tiranës te hosteli?",
+        "a": "Aeroporti është rreth 15 km larg, afërsisht 30 minuta me makinë. Ofrojmë transport nga aeroporti me kërkesë, ndaj na kontaktoni paraprakisht për ta organizuar. Alternativt, taksitë dhe aplikacionet e transportit janë gjerësisht të disponueshme dhe me çmim të arsyeshëm."
+      },
+      {
+        "q": "Cilat metoda pagese pranohen?",
+        "a": "Pranojmë para në dorë në Lek shqiptar ose Euro, si dhe karta krediti dhe debiti. Ju lutemi vini re se taksa turistike e qytetit nuk përfshihet në çmimin e dhomës dhe paguhet veçmas gjatë check-in."
+      },
+      {
+        "q": "A ka moshë minimale për qëndrim?",
+        "a": "Blue Door Hostel është hostel social i orientuar për të rritur. Mysafirët duhet të jenë të paktën 18 vjeç për të qëndruar në dhomën e përbashkët. Familjet me fëmijë mund të pyesin për disponueshmërinë e dhomave private."
+      },
+      {
+        "q": "A lejohen kafshët shtëpiake?",
+        "a": "Fatkeqësisht nuk pranojmë kafshë shtëpiake në hostel."
+      },
+      {
+        "q": "Cilat janë oraret e recepsionit?",
+        "a": "Recepsioni është i hapur nga ora 8:00 deri në mesnatë çdo ditë. Nëse planifikoni të mbërrini jashtë këtyre orëve, ju lutemi na njoftoni paraprakisht që të mund të bëjmë rregullimet për check-in tuaj."
+      },
+      {
+        "q": "A është Wi-Fi falas dhe i besueshëm?",
+        "a": "Po, Wi-Fi i shpejtë është i disponueshëm në të gjithë hostelin pa pagesë, mjaft i besueshëm për punë në distancë, thirrje video dhe ngarkimin e gjithë udhëtimit tuaj."
+      }
+    ]
+  },
+  "schedule": {
+    "label": "Programi javor",
+    "heading": "Diçka çdo natë të javës",
+    "description": "Një program i fiksuar javor që mund të planifikoni qëndrimin tuaj rreth netëve që ju interesojnë. Disa mbrëmje bashkohemi me miqtë tanë në Bearded Dad Hostel.",
+    "today": "Sonte",
+    "venues": {
+      "blue_door": "Blue Door Hostel",
+      "bearded_dad": "Bearded Dad Hostel"
+    },
+    "days": [
+      { "short": "Hën", "full": "E hënë",    "event": "Natë filmi",           "time": "9:30 PM", "venue": "blue_door"  },
+      { "short": "Mar", "full": "E martë",   "event": "Kurs gatimi",          "time": "4:00 PM", "venue": "blue_door"  },
+      { "short": "Mër", "full": "E mërkurë", "event": "Mbrëmje trivia",       "time": "9:00 PM", "venue": "blue_door"  },
+      { "short": "Enj", "full": "E enjte",   "event": "Natë BBQ",             "time": "Mbrëmje", "venue": "bearded_dad"},
+      { "short": "Pre", "full": "E premte",  "event": "Sangria & Karaoke",    "time": "9:00 PM", "venue": "blue_door"  },
+      { "short": "Sht", "full": "E shtunë",  "event": "Mbrëmje trivia",       "time": "Mbrëmje", "venue": "bearded_dad"},
+      { "short": "Die", "full": "E diel",    "event": "BBQ",                  "time": "Mbrëmje", "venue": "blue_door"  }
+    ]
+  },
+  "staffpicks": {
+    "label": "Këshilla lokale",
+    "heading": "Zgjedhjet e stafit: Tirana që jetojmë çdo ditë",
+    "description": "Çdo qytet duket ndryshe kur di ku shkojnë vendësit. Ja çfarë u rekomandojmë mysafirëve tanë para se të na pyesin.",
+    "items": [
+      {
+        "category": "Kafe",
+        "place": "Mulliri i Vjetër",
+        "tip": "Një mulli i vjetër i shndërruar me tarracë të madhe. Kafeja më e mirë në lagje dhe gjithmonë plot vendës, kurrë turistë."
+      },
+      {
+        "category": "Ushqim",
+        "place": "Pazari i Ri",
+        "tip": "Pesë minuta me këmbë. Shkoni në mëngjes për byrek, djathë dhe produkte të freskëta. Mëngjesi më i mirë i Tiranës me 2€."
+      },
+      {
+        "category": "Pije",
+        "place": "Komiteti",
+        "tip": "Një bar kushtuar traditës shqiptare. Porosisni një 'flight' raki dhe lëreni stafin t'ju shpjegojë çfarë po pini. Argëtuese dhe shumë lokale."
+      },
+      {
+        "category": "Jetë nate",
+        "place": "Blloku",
+        "tip": "Dikur lagja private e elitës komuniste, tani distrikti i bareve dhe restoranteve të qytetit. Ecni në çdo drejtim pas orës 22:00."
+      },
+      {
+        "category": "Pamje",
+        "place": "Mali i Dajtit",
+        "tip": "Merrni teleferikun, që niset rreth 20 minuta larg me taksi. Pamja mbi Tiranën në perëndim të diellit është fotoja që të gjithë e mbajnë me vete."
+      },
+      {
+        "category": "Kulturë",
+        "place": "Bunk'Art 2",
+        "tip": "Një bunker bërthamor i Luftës së Ftohtë i shndërruar në muze, 10 minuta larg me këmbë. Tërheqës dhe i papërsëritshëm në Ballkan."
+      }
+    ]
+  },
   "footer": {
     "tagline": "Një simbol i paqes dhe prosperitetit në Tiranë, Shqipëri.",
     "book_with_us": "Rezervo me ne",
+    "contact_us": "Na kontaktoni",
+    "whatsapp_label": "WhatsApp",
+    "email_label": "Email",
     "copyright": "Të gjitha të drejtat e rezervuara."
   }
 }

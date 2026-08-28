@@ -1,11 +1,11 @@
 import {
   Croissant, Bath, Lock, Snowflake, Trees, CookingPot,
-  Wifi, Gamepad2, Bike, Luggage, Laptop, WashingMachine,
+  Wifi, Gamepad2, Bike, Luggage, Laptop, WashingMachine, Car, Sofa,
 } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { useT } from "@/lib/useT";
 
-const icons = [Croissant, Bath, Lock, Snowflake, Trees, CookingPot, Wifi, Gamepad2, Bike, Luggage, Laptop, WashingMachine];
+const icons = [Croissant, Bath, Lock, Snowflake, Trees, CookingPot, Wifi, Gamepad2, Bike, Luggage, Laptop, WashingMachine, Car, Sofa];
 
 export function Amenities() {
   const t = useT();

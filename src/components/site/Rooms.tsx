@@ -1,9 +1,9 @@
-import { Users, VenusAndMars, BedDouble, Check } from "lucide-react";
+import { Users, Bath, Users2, VenusAndMars, BedDouble, Check } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { BOOKING_URL } from "@/lib/hostel";
 import { useT } from "@/lib/useT";
 
-const icons = [Users, VenusAndMars, BedDouble];
+const icons = [Users, Bath, Users2, VenusAndMars, BedDouble];
 
 export function Rooms() {
   const t = useT();
@@ -19,12 +19,12 @@ export function Rooms() {
           </h2>
         </Reveal>
 
-        <ul className="mt-12 grid gap-5 md:grid-cols-3">
+        <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {rows.map((r, i) => (
             <Reveal
               as="li"
               key={r.name}
-              delay={i * 110}
+              delay={(i % 3) * 110}
               className="flex flex-col rounded-3xl border border-border bg-card p-7 shadow-[var(--shadow-soft)]"
             >
               <div className="flex items-start justify-between">
@@ -45,14 +45,16 @@ export function Rooms() {
                   </li>
                 ))}
               </ul>
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="mt-7 rounded-full bg-primary px-5 py-3 text-center text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
-              >
-                {t.rooms.book_button}
-              </a>
+              <div className="mt-auto pt-7">
+                <a
+                  href={BOOKING_URL}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="block rounded-full bg-primary px-5 py-3 text-center text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
+                >
+                  {t.rooms.book_button}
+                </a>
+              </div>
             </Reveal>
           ))}
         </ul>

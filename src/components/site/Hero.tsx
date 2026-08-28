@@ -27,7 +27,7 @@ export function Hero() {
       />
       <div className="relative mx-auto max-w-3xl text-center">
         <Reveal>
-          <DoorIcon className="door-glow mx-auto h-24 sm:h-28" />
+          <DoorIcon className="mx-auto h-24 sm:h-28" animated />
         </Reveal>
         <Reveal delay={100}>
           <h1 className="mt-8 text-balance font-display text-4xl font-bold leading-[1.08] tracking-tight text-primary sm:text-5xl md:text-6xl">
@@ -75,8 +75,7 @@ export function Hero() {
             <img
               src={entranceImg}
               alt="The ivy-covered entrance archway with the iconic cobalt blue door of Blue Door Hostel in Tirana"
-              className="w-full object-cover object-center"
-              style={{ maxHeight: "420px" }}
+              className="w-full"
             />
           </div>
         </Reveal>
