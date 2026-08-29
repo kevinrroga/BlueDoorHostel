@@ -17,6 +17,10 @@ import kitchenImg from "@/assets/photo-kitchen.jpg";
 import dinnerImg from "@/assets/photo-dinner.jpg";
 import partyImg from "@/assets/photo-party.jpg";
 import gardenImg from "@/assets/photo-garden.jpg";
+import google1Img from "@/assets/photo-google-1.jpg";
+import google2Img from "@/assets/photo-google-2.jpg";
+import google3Img from "@/assets/photo-google-3.jpg";
+import google4Img from "@/assets/photo-google-4.jpg";
 
 export const GALLERY_PHOTOS = [
   {
@@ -25,6 +29,20 @@ export const GALLERY_PHOTOS = [
     title: "The blue door itself",
     caption: "The ivy-covered archway on Rruga Shtjefen Gjecovi.",
     alt: "Ivy-covered entrance archway with the Blue Door Hostel sign in Tirana",
+  },
+  {
+    src: google1Img,
+    tag: "Rooms",
+    title: "Room 2",
+    caption: "Red privacy curtains, bunk beds and an Albanian rug on the wall.",
+    alt: "Doorway view into Room 2 at Blue Door Hostel with red curtains and bunk beds",
+  },
+  {
+    src: google2Img,
+    tag: "Rooms",
+    title: "Dorm interior",
+    caption: "Olive curtains, numbered lockers and murals on every wall.",
+    alt: "Hostel dorm room with olive green privacy curtains, lockers and wall murals",
   },
   {
     src: dormAtticImg,
@@ -39,6 +57,13 @@ export const GALLERY_PHOTOS = [
     title: "Mixed dorms",
     caption: "Privacy curtains, personal lockers and reading lights.",
     alt: "Mixed dorm room with bunk beds, privacy curtains and lockers",
+  },
+  {
+    src: google3Img,
+    tag: "Rooms",
+    title: "Your own space",
+    caption: "Warm reading light, fresh pillow and a curtain that's all yours.",
+    alt: "Close-up of a bunk bed pod with warm orange light and privacy curtain",
   },
   {
     src: privateImg,
@@ -60,6 +85,13 @@ export const GALLERY_PHOTOS = [
     title: "Guest kitchen",
     caption: "Blue cabinets, full kit and coffee whenever you need it.",
     alt: "Guest kitchen with blue cabinets and cooking equipment",
+  },
+  {
+    src: google4Img,
+    tag: "The hostel",
+    title: "The staircase mural",
+    caption: "Hand-painted wall art going up the stairs — one of a kind.",
+    alt: "Large hand-painted mural on the staircase wall at Blue Door Hostel",
   },
   {
     src: dinnerImg,
