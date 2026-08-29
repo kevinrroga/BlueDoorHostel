@@ -10,7 +10,7 @@ export function Location() {
   const nearby = t.location.nearby.map((n, i) => ({ Icon: nearbyIcons[i], label: n.label, text: n.text }));
 
   return (
-    <section id="location" className="px-5 py-8 sm:py-12">
+    <section id="location" className="px-5 py-4 sm:py-6">
       <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <Reveal>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{t.location.label}</p>

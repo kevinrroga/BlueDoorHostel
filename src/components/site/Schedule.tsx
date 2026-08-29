@@ -27,7 +27,7 @@ export function Schedule() {
   }, []);
 
   return (
-    <section id="schedule" className="scroll-mt-24 bg-card px-5 py-8 sm:py-12">
+    <section id="schedule" className="scroll-mt-24 bg-card px-5 py-4 sm:py-6">
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
