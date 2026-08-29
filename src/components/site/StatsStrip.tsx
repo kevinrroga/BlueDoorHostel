@@ -15,7 +15,7 @@ const stats: Stat[] = [
     suffix: "/10",
     decimals: 1,
     label: "Hostelworld rating",
-    sublabel: "1,225+ reviews",
+    sublabel: "850+ reviews",
   },
   {
     value: 4.8,
@@ -29,7 +29,7 @@ const stats: Stat[] = [
     suffix: "/10",
     decimals: 1,
     label: "Booking.com rating",
-    sublabel: "636 reviews",
+    sublabel: "635 reviews",
   },
   {
     value: 17,

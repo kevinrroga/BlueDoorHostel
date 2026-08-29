@@ -187,7 +187,7 @@ const jsonLd = {
         ratingValue: "9.5",
         bestRating: "10",
         worstRating: "1",
-        reviewCount: "1225",
+        reviewCount: "850",
       },
       amenityFeature: [
         { "@type": "LocationFeatureSpecification", name: "Free breakfast", value: true },
