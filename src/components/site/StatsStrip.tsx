@@ -11,7 +11,7 @@ interface Stat {
 
 const stats: Stat[] = [
   {
-    value: 9.2,
+    value: 9.5,
     suffix: "/10",
     decimals: 1,
     label: "Hostelworld rating",

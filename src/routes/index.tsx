@@ -22,7 +22,7 @@ const SITE_URL = "https://bluedoorhostel.com";
 
 const title = "Blue Door Hostel: Social Hostel in Tirana, Albania";
 const description =
-  "Stay at Blue Door Hostel in Tirana, Albania. From €17/night. Free breakfast daily, Nana's traditional dinners, nightly events, garden bar and free Wi-Fi. Rated 9.2 on Hostelworld. Near Skanderbeg Square.";
+  "Stay at Blue Door Hostel in Tirana, Albania. From €17/night. Free breakfast daily, Nana's traditional dinners, nightly events, garden bar and free Wi-Fi. Rated 9.5 on Hostelworld. Near Skanderbeg Square.";
 
 const sections = [
   {
@@ -59,7 +59,7 @@ const sections = [
     id: "reviews",
     name: "Guest reviews",
     description:
-      "What travellers say about staying at Blue Door Hostel in Tirana, rated 9.2 on Hostelworld.",
+      "What travellers say about staying at Blue Door Hostel in Tirana, rated 9.5 on Hostelworld.",
   },
   {
     id: "rooms",
@@ -184,7 +184,7 @@ const jsonLd = {
       },
       aggregateRating: {
         "@type": "AggregateRating",
-        ratingValue: "9.2",
+        ratingValue: "9.5",
         bestRating: "10",
         worstRating: "1",
         reviewCount: "1225",

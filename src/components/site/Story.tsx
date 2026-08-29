@@ -62,7 +62,7 @@ export function Story() {
                 <dt className="text-xs uppercase tracking-widest text-white/60">
                   {t.story.stat_rating_label}
                 </dt>
-                <dd className="mt-1 font-display text-3xl font-bold text-gold">9.2</dd>
+                <dd className="mt-1 font-display text-3xl font-bold text-gold">9.5</dd>
               </div>
               <div>
                 <dt className="text-xs uppercase tracking-widest text-white/60">

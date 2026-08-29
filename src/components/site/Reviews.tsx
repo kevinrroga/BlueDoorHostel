@@ -4,7 +4,7 @@ import { useT } from "@/lib/useT";
 
 const scores = [
   {
-    score: "9.2",
+    score: "9.5",
     source: "Hostelworld",
     sub: "1,225+ reviews",
     outOf: "/10",
