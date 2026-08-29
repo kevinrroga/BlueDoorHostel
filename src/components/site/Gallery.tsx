@@ -22,6 +22,7 @@ import google2Img from "@/assets/photo-google-2.jpg";
 import google3Img from "@/assets/photo-google-3.jpg";
 import google4Img from "@/assets/photo-google-4.jpg";
 import hallImg from "@/assets/photo-hall.jpg";
+import staircaseImg from "@/assets/photo-staircase.jpg";
 
 export const GALLERY_PHOTOS = [
   {
@@ -100,6 +101,13 @@ export const GALLERY_PHOTOS = [
     title: "The hallway",
     caption: "Reception desk, free breakfast sign and the staircase leading up.",
     alt: "Blue Door Hostel hallway with reception desk, notice board and painted staircase",
+  },
+  {
+    src: staircaseImg,
+    tag: "The hostel",
+    title: "Up the stairs",
+    caption: "Glass-block skylight, wall murals and warm sconce lighting on the staircase.",
+    alt: "Blue Door Hostel staircase looking up with glass block window and painted murals on the walls",
   },
   {
     src: dinnerImg,
