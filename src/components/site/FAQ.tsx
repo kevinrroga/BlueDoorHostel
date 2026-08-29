@@ -45,7 +45,7 @@ export function FAQ() {
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{t.faq.label}</p>
-          <h2 className="mt-4 text-balance font-display text-3xl font-bold leading-tight text-primary sm:text-4xl">
+          <h2 className="mt-2 text-balance font-display text-3xl font-bold leading-tight text-primary sm:text-4xl">
             {t.faq.heading}
           </h2>
         </Reveal>

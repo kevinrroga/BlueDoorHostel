@@ -14,12 +14,12 @@ export function Rooms() {
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{t.rooms.label}</p>
-          <h2 className="mt-4 text-balance font-display text-3xl font-bold leading-tight text-primary sm:text-4xl">
+          <h2 className="mt-2 text-balance font-display text-3xl font-bold leading-tight text-primary sm:text-4xl">
             {t.rooms.heading}
           </h2>
         </Reveal>
 
-        <ul className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-3 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {rows.map((r, i) => (
             <Reveal
               as="li"
@@ -45,7 +45,7 @@ export function Rooms() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-auto pt-7">
+              <div className="mt-auto pt-4">
                 <a
                   href={BOOKING_URL}
                   target="_blank"

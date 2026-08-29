@@ -6,7 +6,7 @@ import { useT } from "@/lib/useT";
 export function Footer() {
   const t = useT();
   return (
-    <footer className="bg-foreground px-5 py-14 text-background">
+    <footer className="bg-foreground px-5 py-8 text-background">
       <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)_minmax(0,1fr)]">
         <div>
           <div className="flex items-center gap-2.5">

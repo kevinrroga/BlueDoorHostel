@@ -33,7 +33,7 @@ export function Schedule() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
             {t.schedule.label}
           </p>
-          <h2 className="mt-4 text-balance font-display text-3xl font-bold leading-tight text-primary sm:text-4xl">
+          <h2 className="mt-2 text-balance font-display text-3xl font-bold leading-tight text-primary sm:text-4xl">
             {t.schedule.heading}
           </h2>
           <p className="mt-5 text-base leading-relaxed text-foreground/70">
@@ -44,7 +44,7 @@ export function Schedule() {
         {/* Week strip */}
         <div
           ref={stripRef}
-          className="mt-6 flex gap-3 overflow-x-auto pb-3 scrollbar-none"
+          className="mt-3 flex gap-3 overflow-x-auto pb-3 scrollbar-none"
           style={{ scrollSnapType: "x mandatory" }}
         >
           {t.schedule.days.map((day, i) => {
