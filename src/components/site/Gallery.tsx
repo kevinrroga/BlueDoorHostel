@@ -21,6 +21,7 @@ import google1Img from "@/assets/photo-google-1.jpg";
 import google2Img from "@/assets/photo-google-2.jpg";
 import google3Img from "@/assets/photo-google-3.jpg";
 import google4Img from "@/assets/photo-google-4.jpg";
+import hallImg from "@/assets/photo-hall.jpg";
 
 export const GALLERY_PHOTOS = [
   {
@@ -92,6 +93,13 @@ export const GALLERY_PHOTOS = [
     title: "The staircase mural",
     caption: "Hand-painted wall art going up the stairs — one of a kind.",
     alt: "Large hand-painted mural on the staircase wall at Blue Door Hostel",
+  },
+  {
+    src: hallImg,
+    tag: "The hostel",
+    title: "The hallway",
+    caption: "Reception desk, free breakfast sign and the staircase leading up.",
+    alt: "Blue Door Hostel hallway with reception desk, notice board and painted staircase",
   },
   {
     src: dinnerImg,
