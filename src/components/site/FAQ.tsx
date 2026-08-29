@@ -50,7 +50,7 @@ export function FAQ() {
           </h2>
         </Reveal>
 
-        <div className="mt-10 grid gap-3 lg:grid-cols-2 lg:gap-4">
+        <div className="mt-5 grid gap-3 lg:grid-cols-2 lg:gap-4">
           {t.faq.items.map((item, i) => (
             <Reveal key={i} delay={(i % 2) * 80}>
               <FAQItem

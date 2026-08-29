@@ -44,7 +44,7 @@ export function Schedule() {
         {/* Week strip */}
         <div
           ref={stripRef}
-          className="mt-12 flex gap-3 overflow-x-auto pb-3 scrollbar-none"
+          className="mt-6 flex gap-3 overflow-x-auto pb-3 scrollbar-none"
           style={{ scrollSnapType: "x mandatory" }}
         >
           {t.schedule.days.map((day, i) => {

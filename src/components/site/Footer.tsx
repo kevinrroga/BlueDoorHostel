@@ -81,7 +81,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-12 max-w-6xl border-t border-background/15 pt-6 text-xs text-background/50">
+      <div className="mx-auto mt-6 max-w-6xl border-t border-background/15 pt-6 text-xs text-background/50">
         © {new Date().getFullYear()} Blue Door Hostel. {t.footer.copyright}
       </div>
     </footer>

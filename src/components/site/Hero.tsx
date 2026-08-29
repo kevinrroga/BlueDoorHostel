@@ -58,7 +58,7 @@ export function Hero() {
           </div>
         </Reveal>
         <Reveal delay={400}>
-          <ul className="mt-12 flex flex-wrap items-center justify-center gap-2.5">
+          <ul className="mt-6 flex flex-wrap items-center justify-center gap-2.5">
             {badges.map((b) => (
               <li
                 key={b.label}
@@ -71,7 +71,7 @@ export function Hero() {
           </ul>
         </Reveal>
         <Reveal delay={500}>
-          <div className="mt-12 overflow-hidden rounded-3xl shadow-[var(--shadow-lift)]">
+          <div className="mt-6 overflow-hidden rounded-3xl shadow-[var(--shadow-lift)]">
             <img
               src={entranceImg}
               alt="The ivy-covered entrance archway with the iconic cobalt blue door of Blue Door Hostel in Tirana"

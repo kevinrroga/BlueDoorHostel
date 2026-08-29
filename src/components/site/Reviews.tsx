@@ -63,7 +63,7 @@ export function Reviews() {
         </Reveal>
 
         <Reveal delay={80}>
-          <ul className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          <ul className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {categoryScores.map((c) => (
               <li key={c.label} className="rounded-xl border border-border bg-background px-4 py-3 text-center">
                 <p className="font-display text-xl font-bold text-primary">{c.value.toFixed(1)}</p>
