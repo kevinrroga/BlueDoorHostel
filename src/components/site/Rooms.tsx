@@ -1,13 +1,25 @@
+import { useEffect, useState } from "react";
 import { Users, Bath, Users2, VenusAndMars, BedDouble, Check } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { BOOKING_URL } from "@/lib/hostel";
 import { useT } from "@/lib/useT";
+import { fetchRoomPrices } from "@/lib/sanity";
 
 const icons = [Users, Bath, Users2, VenusAndMars, BedDouble];
 
 export function Rooms() {
   const t = useT();
-  const rows = t.rooms.items.map((r, i) => ({ Icon: icons[i], name: r.name, from: r.from, text: r.text, features: r.features }));
+  const [sanityPrices, setSanityPrices] = useState<(number | null)[]>([]);
+
+  useEffect(() => {
+    fetchRoomPrices().then(setSanityPrices);
+  }, []);
+
+  const rows = t.rooms.items.map((r, i) => {
+    const sanityPrice = sanityPrices[i];
+    const from = sanityPrice != null ? `€${sanityPrice} / night` : r.from;
+    return { Icon: icons[i], name: r.name, from, text: r.text, features: r.features };
+  });
 
   return (
     <section id="rooms" className="px-5 py-20 sm:py-28">

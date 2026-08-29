@@ -131,7 +131,8 @@ export const siteContent = defineType({
           fields: [
             defineField({ name: "icon", title: "Icon name (lucide)", type: "string" }),
             localizedString("name", "Room name"),
-            localizedString("from", "Pricing label"),
+            defineField({ name: "pricePerNight", title: "Price per night (€)", type: "number" }),
+            localizedString("from", "Pricing label (override, e.g. €18 / night)"),
             localizedString("text", "Description"),
             defineField({
               name: "features",

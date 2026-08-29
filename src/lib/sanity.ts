@@ -24,3 +24,14 @@ export async function fetchRatings(): Promise<SanityRatings | null> {
     return null;
   }
 }
+
+export async function fetchRoomPrices(): Promise<(number | null)[]> {
+  try {
+    const data = await sanityClient.fetch<{ pricePerNight?: number }[]>(
+      `*[_type == "siteContent"][0].rooms[]{pricePerNight}`
+    );
+    return (data ?? []).map((r) => r?.pricePerNight ?? null);
+  } catch {
+    return [];
+  }
+}
