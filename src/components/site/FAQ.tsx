@@ -41,7 +41,7 @@ export function FAQ() {
     });
 
   return (
-    <section id="faq" className="scroll-mt-24 px-5 py-20 sm:py-28">
+    <section id="faq" className="scroll-mt-24 px-5 py-14 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{t.faq.label}</p>

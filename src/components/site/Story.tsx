@@ -42,7 +42,7 @@ export function Story() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
   return (
-    <section id="about" className="px-5 py-20 sm:py-28">
+    <section id="about" className="px-5 py-14 sm:py-20">
       <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <Reveal className="order-2 lg:order-1">
           <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-lift)]">

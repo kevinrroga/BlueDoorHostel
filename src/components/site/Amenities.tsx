@@ -12,7 +12,7 @@ export function Amenities() {
   const rows = t.amenities.items.map((item, i) => ({ Icon: icons[i], title: item.title, text: item.text }));
 
   return (
-    <section id="amenities" className="scroll-mt-24 px-5 py-20 sm:py-28">
+    <section id="amenities" className="scroll-mt-24 px-5 py-14 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{t.amenities.label}</p>
