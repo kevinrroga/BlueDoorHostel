@@ -1,6 +1,6 @@
-import { DoorIcon } from "./DoorIcon";
 import { Reveal } from "./Reveal";
 import { useT } from "@/lib/useT";
+import plaqueImg from "@/assets/photo-plaque.jpg";
 
 export function Story() {
   const t = useT();
@@ -8,16 +8,13 @@ export function Story() {
     <section id="about" className="px-5 py-20 sm:py-28">
       <div className="mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
         <Reveal className="order-2 lg:order-1">
-          <div className="relative overflow-hidden rounded-3xl bg-[image:var(--gradient-door)] p-8 text-white shadow-[var(--shadow-lift)] sm:p-12">
-            <div
-              aria-hidden
-              className="absolute -right-16 -top-16 h-56 w-56 rounded-full bg-gold/15 blur-2xl"
+          <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-lift)]">
+            <img
+              src={plaqueImg}
+              alt="Historic plaque on the wall of Blue Door Hostel marking it as a partisan base 1936–1943"
+              className="w-full object-cover"
             />
-            <DoorIcon className="relative h-36 sm:h-44" />
-            <p className="relative mt-8 max-w-xs font-display text-xl leading-snug">
-              {t.story.door_motto}
-            </p>
-            <dl className="relative mt-10 grid grid-cols-3 gap-4 border-t border-white/20 pt-8">
+            <dl className="grid grid-cols-3 gap-4 bg-[image:var(--gradient-door)] px-8 py-6 text-white">
               <div>
                 <dt className="text-xs uppercase tracking-widest text-white/60">
                   {t.story.stat_rating_label}
@@ -34,7 +31,7 @@ export function Story() {
                 <dt className="text-xs uppercase tracking-widest text-white/60">
                   {t.story.stat_villa_label}
                 </dt>
-                <dd className="mt-1 font-display text-3xl font-bold text-gold">WWII</dd>
+                <dd className="mt-1 font-display text-3xl font-bold text-gold">1936</dd>
               </div>
             </dl>
           </div>
