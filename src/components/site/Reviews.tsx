@@ -6,7 +6,7 @@ const scores = [
   {
     score: "9.5",
     source: "Hostelworld",
-    sub: "1,225+ reviews",
+    sub: "850+ reviews",
     outOf: "/10",
     href: "https://www.hostelworld.com/hostels/p/312998/blue-door-hostel/#reviews",
   },

@@ -57,19 +57,7 @@ export function Story() {
                 className="w-full object-cover transition-transform duration-300 hover:scale-[1.02]"
               />
             </button>
-            <dl className="grid grid-cols-3 gap-4 bg-[image:var(--gradient-door)] px-8 py-6 text-white">
-              <div>
-                <dt className="text-xs uppercase tracking-widest text-white/60">
-                  {t.story.stat_rating_label}
-                </dt>
-                <dd className="mt-1 font-display text-3xl font-bold text-gold">9.5</dd>
-              </div>
-              <div>
-                <dt className="text-xs uppercase tracking-widest text-white/60">
-                  {t.story.stat_reviews_label}
-                </dt>
-                <dd className="mt-1 font-display text-3xl font-bold text-gold">1.2k+</dd>
-              </div>
+            <dl className="bg-[image:var(--gradient-door)] px-8 py-6 text-white">
               <div>
                 <dt className="text-xs uppercase tracking-widest text-white/60">
                   {t.story.stat_villa_label}
