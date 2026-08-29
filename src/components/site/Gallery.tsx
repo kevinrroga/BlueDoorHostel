@@ -239,13 +239,13 @@ export function Gallery() {
     setLightboxIndex((i) => (i === null ? 0 : (i + 1) % GALLERY_PHOTOS.length)), []);
 
   return (
-    <section id="gallery" className="scroll-mt-24 bg-background py-6 md:py-8">
+    <section id="gallery" className="scroll-mt-24 bg-background py-10 md:py-14">
       <div className="mx-auto max-w-6xl px-5">
         <Reveal className="max-w-2xl">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent">
             Gallery
           </p>
-          <h2 className="mt-2 font-display text-3xl font-bold text-primary md:text-4xl">
+          <h2 className="mt-3 font-display text-3xl font-bold text-primary md:text-4xl">
             A look inside the blue door
           </h2>
           <p className="mt-4 text-base leading-relaxed text-foreground/75">

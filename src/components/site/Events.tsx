@@ -9,11 +9,11 @@ export function Events() {
   const list = t.events.items.map((item, i) => ({ Icon: icons[i], title: item.title, text: item.text }));
 
   return (
-    <section id="events" className="bg-[image:var(--gradient-door)] px-5 py-4 sm:py-6">
-      <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)] lg:gap-10">
+    <section id="events" className="bg-[image:var(--gradient-door)] px-5 py-10 text-white sm:py-14">
+      <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)] lg:gap-16">
         <Reveal>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">{t.events.label}</p>
-          <h2 className="mt-2 text-balance font-display text-3xl font-bold leading-tight sm:text-4xl">
+          <h2 className="mt-3 text-balance font-display text-3xl font-bold leading-tight sm:text-4xl">
             {t.events.heading}
           </h2>
           <p className="mt-6 text-base leading-relaxed text-white/75">{t.events.description}</p>

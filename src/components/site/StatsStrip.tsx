@@ -90,7 +90,7 @@ export function StatsStrip() {
   }, []);
 
   return (
-    <div ref={ref} className="bg-[image:var(--gradient-door)] px-5 py-6 text-white">
+    <div ref={ref} className="bg-[image:var(--gradient-door)] px-5 py-8 text-white">
       <dl className="mx-auto grid max-w-6xl grid-cols-2 gap-8 lg:grid-cols-4">
         {stats.map((s) => (
           <div key={s.label} className="text-center">
