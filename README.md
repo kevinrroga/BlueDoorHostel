@@ -1,3 +1,4 @@
+<img width="1920" height="998" alt="preview png" src="https://github.com/user-attachments/assets/68f5fdc2-fe4b-4ee8-8c61-c23d8621bd7f" />
 # Blue Door Hostel
 
 Marketing website for Blue Door Hostel, a hostel in Tirana, Albania, housed 
