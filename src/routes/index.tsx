@@ -22,7 +22,7 @@ const SITE_URL = "https://bluedoorhostel.com";
 
 const title = "Blue Door Hostel: Social Hostel in Tirana, Albania";
 const description =
-  "Stay at Blue Door Hostel in Tirana, Albania — from €17/night. Free breakfast daily, Nana's traditional dinners, nightly events, garden bar and free Wi-Fi. Rated 9.2 on Hostelworld. Near Skanderbeg Square.";
+  "Stay at Blue Door Hostel in Tirana, Albania. From €17/night. Free breakfast daily, Nana's traditional dinners, nightly events, garden bar and free Wi-Fi. Rated 9.2 on Hostelworld. Near Skanderbeg Square.";
 
 const sections = [
   {
@@ -65,7 +65,7 @@ const sections = [
     id: "rooms",
     name: "Rooms and prices",
     description:
-      "Mixed dorms from €17, female-only dorm at €20 and private rooms at €28 — all with free breakfast.",
+      "Mixed dorms from €17, female-only dorm at €20 and private rooms at €28, all with free breakfast.",
   },
   {
     id: "location",
@@ -100,7 +100,7 @@ const faqSchema = {
       name: "How do I get from Tirana Airport to Blue Door Hostel?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The airport is around 15 km away, roughly a 30-minute drive. We offer airport pickup on request — contact us in advance to arrange it. Taxis and ride-share apps are also widely available.",
+        text: "The airport is around 15 km away, roughly a 30-minute drive. We offer airport pickup on request; contact us in advance to arrange it. Taxis and ride-share apps are also widely available.",
       },
     },
     {

@@ -11,7 +11,7 @@ export function Story() {
           <div className="overflow-hidden rounded-3xl shadow-[var(--shadow-lift)]">
             <img
               src={plaqueImg}
-              alt="Historic plaque on the wall of Blue Door Hostel marking it as a partisan base 1936–1943"
+              alt="Historic plaque on the wall of Blue Door Hostel marking it as a partisan base 1936-1943"
               className="w-full object-cover"
             />
             <dl className="grid grid-cols-3 gap-4 bg-[image:var(--gradient-door)] px-8 py-6 text-white">

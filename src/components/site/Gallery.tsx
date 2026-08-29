@@ -92,7 +92,7 @@ export const GALLERY_PHOTOS = [
     src: google4Img,
     tag: "The hostel",
     title: "The staircase mural",
-    caption: "Hand-painted wall art going up the stairs — one of a kind.",
+    caption: "Hand-painted wall art going up the stairs, one of a kind.",
     alt: "Large hand-painted mural on the staircase wall at Blue Door Hostel",
   },
   {
