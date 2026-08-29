@@ -6,8 +6,6 @@ in a historic WWII-era villa near the Old Bazaar.
 
 **Live site:** [bluedoorhostel.vercel.app](https://bluedoorhostel.vercel.app/)
 
-![Blue Door Hostel website preview](./public/preview.png)
-
 ## Features
 
 - Landing page with hero section, rooms overview, amenities, and contact info
