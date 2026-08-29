@@ -33,7 +33,7 @@ export function Reviews() {
   const categoryScores = categoryValues.map((value, i) => ({ label: t.reviews.categories[i], value }));
 
   return (
-    <section id="reviews" className="scroll-mt-24 bg-card px-5 py-14 sm:py-20">
+    <section id="reviews" className="scroll-mt-24 bg-card px-5 py-8 sm:py-12">
       <div className="mx-auto max-w-6xl">
         <Reveal className="flex flex-col items-start gap-8 md:flex-row md:items-end md:justify-between">
           <div className="max-w-xl">

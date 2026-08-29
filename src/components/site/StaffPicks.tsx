@@ -22,7 +22,7 @@ export function StaffPicks() {
   }));
 
   return (
-    <section id="staffpicks" className="scroll-mt-24 px-5 py-14 sm:py-20">
+    <section id="staffpicks" className="scroll-mt-24 px-5 py-8 sm:py-12">
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">

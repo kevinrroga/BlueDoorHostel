@@ -10,7 +10,7 @@ export function Rooms() {
   const rows = t.rooms.items.map((r, i) => ({ Icon: icons[i], name: r.name, from: r.from, text: r.text, features: r.features }));
 
   return (
-    <section id="rooms" className="px-5 py-14 sm:py-20">
+    <section id="rooms" className="px-5 py-8 sm:py-12">
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">{t.rooms.label}</p>
