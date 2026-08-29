@@ -1,4 +1,12 @@
 import { useEffect, useRef, useState } from "react";
+import { fetchRatings, type SanityRatings } from "@/lib/sanity";
+
+const FALLBACK = {
+  hostelworld: { score: 9.5, reviewCount: "850+ reviews" },
+  bookingCom: { score: 8.9, reviewCount: "635 reviews" },
+  googleMaps: { score: 4.8, reviewCount: "247 reviews" },
+  priceFrom: 17,
+};
 
 interface Stat {
   value: number;
@@ -9,37 +17,42 @@ interface Stat {
   sublabel?: string;
 }
 
-const stats: Stat[] = [
-  {
-    value: 9.5,
-    suffix: "/10",
-    decimals: 1,
-    label: "Hostelworld rating",
-    sublabel: "850+ reviews",
-  },
-  {
-    value: 4.8,
-    suffix: "/5",
-    decimals: 1,
-    label: "Google Maps rating",
-    sublabel: "247 reviews",
-  },
-  {
-    value: 8.9,
-    suffix: "/10",
-    decimals: 1,
-    label: "Booking.com rating",
-    sublabel: "635 reviews",
-  },
-  {
-    value: 17,
-    prefix: "€",
-    suffix: "+",
-    decimals: 0,
-    label: "From per night",
-    sublabel: "Breakfast included",
-  },
-];
+function buildStats(r: SanityRatings | null): Stat[] {
+  const hw = r?.hostelworld;
+  const bc = r?.bookingCom;
+  const gm = r?.googleMaps;
+  return [
+    {
+      value: hw?.score ?? FALLBACK.hostelworld.score,
+      suffix: "/10",
+      decimals: 1,
+      label: "Hostelworld rating",
+      sublabel: hw?.reviewCount ?? FALLBACK.hostelworld.reviewCount,
+    },
+    {
+      value: gm?.score ?? FALLBACK.googleMaps.score,
+      suffix: "/5",
+      decimals: 1,
+      label: "Google Maps rating",
+      sublabel: gm?.reviewCount ?? FALLBACK.googleMaps.reviewCount,
+    },
+    {
+      value: bc?.score ?? FALLBACK.bookingCom.score,
+      suffix: "/10",
+      decimals: 1,
+      label: "Booking.com rating",
+      sublabel: bc?.reviewCount ?? FALLBACK.bookingCom.reviewCount,
+    },
+    {
+      value: r?.priceFrom ?? FALLBACK.priceFrom,
+      prefix: "€",
+      suffix: "+",
+      decimals: 0,
+      label: "From per night",
+      sublabel: "Breakfast included",
+    },
+  ];
+}
 
 function Counter({ value, prefix = "", suffix = "", decimals = 0, active }: {
   value: number;
@@ -77,6 +90,11 @@ function Counter({ value, prefix = "", suffix = "", decimals = 0, active }: {
 export function StatsStrip() {
   const ref = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(false);
+  const [ratings, setRatings] = useState<SanityRatings | null>(null);
+
+  useEffect(() => {
+    fetchRatings().then(setRatings);
+  }, []);
 
   useEffect(() => {
     const el = ref.current;
@@ -88,6 +106,8 @@ export function StatsStrip() {
     observer.observe(el);
     return () => observer.disconnect();
   }, []);
+
+  const stats = buildStats(ratings);
 
   return (
     <div ref={ref} className="bg-[image:var(--gradient-door)] px-5 py-12 text-white">

@@ -177,6 +177,43 @@ export const siteContent = defineType({
       ],
     }),
 
+    // ── RATINGS ───────────────────────────────────────────────────────────
+    defineField({
+      name: "ratings",
+      title: "Ratings",
+      type: "object",
+      fields: [
+        defineField({
+          name: "hostelworld",
+          title: "Hostelworld",
+          type: "object",
+          fields: [
+            defineField({ name: "score", title: "Score (e.g. 9.5)", type: "number" }),
+            defineField({ name: "reviewCount", title: "Review count label (e.g. 850+ reviews)", type: "string" }),
+          ],
+        }),
+        defineField({
+          name: "bookingCom",
+          title: "Booking.com",
+          type: "object",
+          fields: [
+            defineField({ name: "score", title: "Score (e.g. 8.9)", type: "number" }),
+            defineField({ name: "reviewCount", title: "Review count label (e.g. 635 reviews)", type: "string" }),
+          ],
+        }),
+        defineField({
+          name: "googleMaps",
+          title: "Google Maps",
+          type: "object",
+          fields: [
+            defineField({ name: "score", title: "Score (e.g. 4.8)", type: "number" }),
+            defineField({ name: "reviewCount", title: "Review count label (e.g. 247 reviews)", type: "string" }),
+          ],
+        }),
+        defineField({ name: "priceFrom", title: "Price from (e.g. 17)", type: "number" }),
+      ],
+    }),
+
     // ── FOOTER ────────────────────────────────────────────────────────────
     defineField({
       name: "footer",

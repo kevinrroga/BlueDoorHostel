@@ -1,8 +1,10 @@
+import { useEffect, useState } from "react";
 import { Star } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { useT } from "@/lib/useT";
+import { fetchRatings, type SanityRatings } from "@/lib/sanity";
 
-const scores = [
+const FALLBACK_SCORES = [
   {
     score: "9.5",
     source: "Hostelworld",
@@ -13,7 +15,7 @@ const scores = [
   {
     score: "8.9",
     source: "Booking.com",
-    sub: "636 reviews",
+    sub: "635 reviews",
     outOf: "/10",
     href: "https://www.booking.com/hotel/al/blue-door-hostel.en-gb.html#tab-reviews",
   },
@@ -26,11 +28,44 @@ const scores = [
   },
 ];
 
+function buildScores(r: SanityRatings | null) {
+  return [
+    {
+      score: r?.hostelworld?.score?.toString() ?? FALLBACK_SCORES[0].score,
+      source: "Hostelworld",
+      sub: r?.hostelworld?.reviewCount ?? FALLBACK_SCORES[0].sub,
+      outOf: "/10",
+      href: FALLBACK_SCORES[0].href,
+    },
+    {
+      score: r?.bookingCom?.score?.toString() ?? FALLBACK_SCORES[1].score,
+      source: "Booking.com",
+      sub: r?.bookingCom?.reviewCount ?? FALLBACK_SCORES[1].sub,
+      outOf: "/10",
+      href: FALLBACK_SCORES[1].href,
+    },
+    {
+      score: r?.googleMaps?.score?.toString() ?? FALLBACK_SCORES[2].score,
+      source: "Google Maps",
+      sub: r?.googleMaps?.reviewCount ?? FALLBACK_SCORES[2].sub,
+      outOf: "/5",
+      href: FALLBACK_SCORES[2].href,
+    },
+  ];
+}
+
 const categoryValues = [9.4, 9.3, 9.7, 9.1, 9.0, 8.8];
 
 export function Reviews() {
   const t = useT();
+  const [ratings, setRatings] = useState<SanityRatings | null>(null);
   const categoryScores = categoryValues.map((value, i) => ({ label: t.reviews.categories[i], value }));
+
+  useEffect(() => {
+    fetchRatings().then(setRatings);
+  }, []);
+
+  const scores = buildScores(ratings);
 
   return (
     <section id="reviews" className="scroll-mt-24 bg-card px-5 py-20 sm:py-28">
