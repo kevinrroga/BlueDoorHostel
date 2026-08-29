@@ -19,14 +19,14 @@
   },
   "story": {
     "label": "Historia jonë",
-    "heading": "Një vilë e vjetër partizane, ende plot jetë",
-    "paragraph1": "Shtëpia është një vilë historike shqiptare që strehoi partizanët e Luftës së Dytë Botërore. Struktura e saj është e njëjtë: mure të trasha, tavan të lartë, oxhak në dhomën e përbashkët, por brenda është rinovuar me kujdes në një vend të ngrohtë dhe shoqëror.",
-    "paragraph2": "Piktura lokale varin pothuajse në çdo mur, duke ndërthurur artin shqiptar të vjetër dhe modern, dhe dera e hyrjes blu kobalt, pas së cilës hosteti mori emrin, ka pasur gjithmonë të njëjtin kuptim: paqe dhe prosperitet për të gjithë ata që kalojnë nëpër të.",
+    "heading": "Një bazë partizane, tani një vend për të pushuar",
+    "paragraph1": "Një pllakë mermeri në murin jashtë e tregon historinë qartë: nga viti 1936 deri në fund të vitit 1943, kjo shtëpi shërbeu si bazë e një aktiviteti revolucionar dhe ishte një nga pikat kryesore të ndërliodhjes me Çetën e Pezës gjatë Luftës Nacional Çlirimtare.",
+    "paragraph2": "Struktura e ndërtesës është ende e njëjtë — mure të trasha, tavan të lartë, piktura lokale pothuajse në çdo mur — por brenda është hapur me kujdes në një vend të ngrohtë dhe shoqëror.",
     "paragraph3": "Lagja është Tirana e vërtetë: furra buke, kafene cepi dhe fqinjë që përshëndesin, me Sheshin Skënderbej dhe Pazarin e Ri vetëm pak hapa larg.",
-    "door_motto": "Një simbol i paqes dhe prosperitetit, i lyer me blu kobalt.",
+    "door_motto": "Bazë e Çetës së Pezës, 1936–1943.",
     "stat_rating_label": "Vlerësim i mysafirëve",
     "stat_reviews_label": "Komente",
-    "stat_villa_label": "Vilë që nga"
+    "stat_villa_label": "Bazë që nga"
   },
   "amenities": {
     "label": "Shërbime",

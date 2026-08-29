@@ -19,14 +19,14 @@
   },
   "story": {
     "label": "Our story",
-    "heading": "An old partisan villa, still full of life",
-    "paragraph1": "The house is a historic Albanian villa that sheltered WWII partisans. Its bones are the same: thick walls, high ceilings, a fireplace in the common room, but the inside has been carefully renovated into a warm, social place to stay.",
-    "paragraph2": "Local paintings hang on almost every wall, blending old and modern Albanian art, and the cobalt blue front door the hostel is named after has always meant the same thing here: peace and prosperity to whoever walks through it.",
+    "heading": "A partisan base, now a place to rest",
+    "paragraph1": "A marble plaque on the wall outside tells the story plainly: from 1936 to the end of 1943, this house served as a base for revolutionary activity and was one of the key liaison points for the Peza Partisan unit during Albania's National Liberation War.",
+    "paragraph2": "The bones of the building are still the same — thick walls, high ceilings, local paintings on almost every surface — but the inside has been carefully opened up into a warm, social place to stay.",
     "paragraph3": "The neighbourhood is real Tirana: bakeries, corner cafes and neighbours who say hello, with Skanderbeg Square and the New Bazaar an easy walk away.",
-    "door_motto": "A symbol of peace and prosperity, painted cobalt blue.",
+    "door_motto": "A base for the Peza Partisans, 1936–1943.",
     "stat_rating_label": "Guest rating",
     "stat_reviews_label": "Reviews",
-    "stat_villa_label": "A villa since"
+    "stat_villa_label": "A base since"
   },
   "amenities": {
     "label": "Amenities",

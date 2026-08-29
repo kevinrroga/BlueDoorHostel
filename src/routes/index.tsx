@@ -33,9 +33,9 @@ const sections = [
   },
   {
     id: "about",
-    name: "Our story: a WWII-era Tirana villa",
+    name: "Our story: a partisan base turned hostel",
     description:
-      "How a 1940s Albanian family villa behind a cobalt blue door became Tirana's most sociable hostel.",
+      "From 1936 to 1943 this house was a liaison base for the Peza Partisans. Today it's Tirana's most sociable hostel.",
   },
   {
     id: "amenities",
