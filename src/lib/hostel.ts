@@ -5,8 +5,9 @@ export const ADDRESS = "Rruga Shtjefen Gjecovi 18, Tirana, Albania";
 
 export const PHONE_DISPLAY = "+355 69 553 9156";
 export const WHATSAPP_URL = "https://wa.me/355695539156";
-export const EMAIL = "thebluedoorhostel@gmail.com";
-export const MAILTO_URL = `mailto:${EMAIL}`;
+export const EMAIL_USER = "thebluedoorhostel";
+export const EMAIL_DOMAIN = "gmail.com";
+export const EMAIL = `${EMAIL_USER}@${EMAIL_DOMAIN}`;
 export const INSTAGRAM_URL = "https://www.instagram.com/thebluedoorhostel/";
 export const INSTAGRAM_HANDLE = "@thebluedoorhostel";
 

@@ -1,6 +1,6 @@
 import { MessageCircle, Mail, Instagram } from "lucide-react";
 import { DoorIcon } from "./DoorIcon";
-import { ADDRESS, BOOKING_URL, PHONE_DISPLAY, WHATSAPP_URL, EMAIL, MAILTO_URL, INSTAGRAM_URL, INSTAGRAM_HANDLE } from "@/lib/hostel";
+import { ADDRESS, BOOKING_URL, PHONE_DISPLAY, WHATSAPP_URL, EMAIL, EMAIL_USER, EMAIL_DOMAIN, INSTAGRAM_URL, INSTAGRAM_HANDLE } from "@/lib/hostel";
 import { useT } from "@/lib/useT";
 
 export function Footer() {
@@ -58,13 +58,13 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a
-                href={MAILTO_URL}
+              <button
+                onClick={() => { window.location.href = `mailto:${EMAIL_USER}@${EMAIL_DOMAIN}`; }}
                 className="flex items-center gap-2.5 text-background/75 transition-colors hover:text-gold"
               >
                 <Mail className="h-4 w-4 shrink-0" />
                 <span>{EMAIL}</span>
-              </a>
+              </button>
             </li>
             <li>
               <a
